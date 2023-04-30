@@ -7,9 +7,10 @@ public class TestMaximumMain {
         Scanner sc = new Scanner(System.in);
         TestMaximumUC tm = new TestMaximumUC();
         System.out.println("Enter three numbers");
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
-        int num3 = sc.nextInt();
-        tm.compareInt(num1,num2,num3);
+        float num1 = sc.nextInt();
+        float num2 = sc.nextInt();
+        float num3 = sc.nextInt();
+        tm.compareFloat(num1,num2,num3);
     }
 }
+
