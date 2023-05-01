@@ -6,11 +6,15 @@ public class TestMaximumMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TestMaximumUC tm = new TestMaximumUC();
-        System.out.println("Enter three numbers");
-        float num1 = sc.nextInt();
-        float num2 = sc.nextInt();
-        float num3 = sc.nextInt();
-        tm.compareFloat(num1,num2,num3);
+        while (true) {
+            System.out.println("Enter number \n 1 for int \n 2 for float \n 3 for String \n 4 to stop");
+            int n = sc.nextInt();
+            if(n==1 || n==2 || n==3 ) {
+                tm.findmax(n);
+            }
+            else{
+                break;
+            }
+        }
     }
 }
-
